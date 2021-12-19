@@ -1,22 +1,37 @@
 {
-  "name": "webTemplate",
-  "version": "3.1.10",
-  "description": "webTemplate serves as a springboard to use when diving into a new project 🏊",
-  "author": "MLousdal",
-  "url": "madslousdal.dk",
-  "license": "MIT",
+  "name": "webtemplatevue",
+  "version": "1.0.0",
+  "description": "boilerplate for Vue projects",
+  "main": "src/main.js",
   "source": "src/index.html",
   "scripts": {
-    "dev": "parcel --no-cache",
+    "dev": "parcel serve --no-cache",
     "build": "parcel build --public-url ./"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MLousdal/webTemplateVue.git"
+  },
+  "keywords": [
+    "boilerplate",
+    "vue",
+    "parcel"
+  ],
+  "author": "MLousdal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MLousdal/webTemplateVue/issues"
+  },
+  "homepage": "https://github.com/MLousdal/webTemplateVue#readme",
   "devDependencies": {
     "@parcel/transformer-image": "^2.0.0-rc.0",
     "@parcel/transformer-sass": "^2.0.0-rc.0",
-    "animate.css": "^4.1.1",
-    "autoprefixer": "^10.3.2",
+    "@parcel/transformer-vue": "^2.0.0-rc.0",
+    "autoprefixer": "^10.3.7",
     "parcel": "^2.0.0-rc.0",
-    "parcel-reporter-static-files-copy": "^1.3.0",
-    "sass": "^1.38.1"
+    "postcss": "^8.3.9"
+  },
+  "dependencies": {
+    "vue": "^3.2.19"
   }
 }

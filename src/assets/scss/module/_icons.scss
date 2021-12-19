@@ -3,35 +3,13 @@
 .icon {
     width: $unit-2;
     height: $unit-2;
-    filter: var(--filter-font-color);
 
     &:hover {
-        filter: var(--filter-primary);
+        filter: var(--filter);
     }
 
     img {
         width: 100%;
         height: 100%;
-    }
-}
-
-
-.tool {
-    display: flex;
-    flex-direction: column;
-    gap: $unit-1;
-    justify-content: center;
-    align-items: center;
-    flex: 1 1 0px;
-    filter: var(--filter-font-color);
-
-    img {
-        width: 30%;
-        min-width: $unit-2;
-    }
-
-    span {
-        color: initial;
-        margin-top: auto;
     }
 }

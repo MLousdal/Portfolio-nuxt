@@ -65,11 +65,3 @@
     outline: none;
   }
 }
-
-.scale {
-  transition: transform 0.2s ease-in;
-
-  &:hover, &:focus {
-    transform: scale(1.1);
-  }
-}
