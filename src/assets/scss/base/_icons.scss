@@ -3,9 +3,10 @@
 .icon {
     width: $unit-2;
     height: $unit-2;
+    filter: var(--filter-font-color);
 
     &:hover {
-        filter: var(--filter);
+        filter: var(--filter-primary);
     }
 
     img {
@@ -16,5 +17,13 @@
     &.s {
         width: $unit-1;
         height: $unit-1;
+    }
+    &.m {
+        width: $unit-15;
+        height: $unit-15;
+    }
+    &.l {
+        width: $unit-25;
+        height: $unit-25;
     }
 }

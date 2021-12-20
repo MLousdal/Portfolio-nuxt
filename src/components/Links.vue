@@ -3,6 +3,7 @@
     <a
       href="mailto:mads.lousdal@gmail.com"
       class="icon"
+      :class="[{ m: size == 'm' }, { l: size == 'l' }]"
       target="_blank"
       rel="noopener"
       ><img
@@ -12,6 +13,7 @@
     <a
       href="https://www.linkedin.com/in/mads-lousdal/"
       class="icon"
+      :class="[{ m: size == 'm' }, { l: size == 'l' }]"
       target="_blank"
       rel="noopener"
       ><img src="../assets/images/icons/social/mdi_linkedin.svg" alt="linkedin"
@@ -19,6 +21,7 @@
     <a
       href="https://github.com/MLousdal"
       class="icon"
+      :class="[{ m: size == 'm' }, { l: size == 'l' }]"
       target="_blank"
       rel="noopener"
       ><img src="../assets/images/icons/social/mdi_github.svg" alt="github"
@@ -28,7 +31,8 @@
 
 <script>
 export default {
-  name: "Links"
+  name: "Links",
+  props: { size: String },
 };
 </script>
 

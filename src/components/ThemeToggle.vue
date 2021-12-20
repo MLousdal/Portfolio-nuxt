@@ -32,11 +32,13 @@ export default {
 
     let sun = document.createElement("img");
     sun.src = "mdi_white-balance-sunny.svg";
-    sun.classList = "icon s filter-font-color"
+    sun.classList = "icon s filter-font-color";
+    sun.alt = "";
 
     let moon = document.createElement("img");
     moon.src = "mdi_weather-night.svg";
-    moon.classList = "icon s filter-font-color"
+    moon.classList = "icon s filter-font-color";
+    moon.alt = "";
 
     if (userPrefersDark) {
       document.body.className = "theme-dark";
@@ -53,5 +55,8 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
+.filter-font-color.icon:hover {
+  filter: var(--filter-font-color);
+}
 </style>

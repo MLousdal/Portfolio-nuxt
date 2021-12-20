@@ -11,7 +11,7 @@
       </ul>
     </div>
     <div class="flex row gap">
-      <links></links>
+      <links size="m"></links>
       <theme-toggle></theme-toggle>
     </div>
   </nav>

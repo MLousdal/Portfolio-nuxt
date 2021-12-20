@@ -29,10 +29,10 @@ $border-radius-l: calc(#{$border-radius} * 1.5);
 $border-radius-o: calc(#{$border-radius} * 100);
 
 // Shadows 
-$shadow-offset: 0px 0px;
-$shadow-normal: #{$shadow-offset} 6px 6px;
-$shadow-normal-s: #{$shadow-offset} 3px 3px;
-$shadow-normal-l: #{$shadow-offset} 12px 12px;
+$shadow-offset: 0px 2px;
+$shadow-normal: #{$shadow-offset} 4px 0px;
+$shadow-normal-s: #{$shadow-offset} 2px 0px;
+$shadow-normal-l: #{$shadow-offset} 8px 0px;
 
 //  Neutral colors
 $neutral-100: hsl(0, 0%, 100%);

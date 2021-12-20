@@ -1,1 +1,11 @@
 @use "../base/variables" as *;
+
+.hero {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: $unit-3;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+}
