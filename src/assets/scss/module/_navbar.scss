@@ -1,0 +1,38 @@
+@use "../base/variables" as *;
+
+nav {
+  padding: $unit-1;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      margin-bottom: 0;
+    }
+  }
+
+  a {
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+
+    &:hover img {
+      filter: var(--filter-primary);
+    }
+
+    img {
+      filter: var(--filter-font-color);
+    }
+  }
+
+  .logo {
+    
+    img {
+      filter: var(--filter-primary);
+      display: block;
+    }
+  }
+}

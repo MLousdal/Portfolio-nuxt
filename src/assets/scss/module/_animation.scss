@@ -53,15 +53,15 @@
 }
 
 .underline {
-  padding-bottom: 2px;
+  padding-bottom: 3px;
   background: linear-gradient(var(--color-primary), var(--color-primary)) bottom;
-  background-size: 0% 2px;
+  background-size: 0% 3px;
   background-repeat: no-repeat;
   transition: all 0.45s;
 
   &:hover,
   &:focus {
-    background-size: 50% 2px;
+    background-size: 75% 3px;
     outline: none;
   }
 }
