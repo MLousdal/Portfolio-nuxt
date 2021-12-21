@@ -2,23 +2,34 @@
   <Navbar></Navbar>
   <header class="hero wrapper">
     <h2 class="wave">Hejsa</h2>
-    <h1>
-      Mit navn er <b class="text-primary">Mads Lousdal</b>, og jeg er en
-      passioneret frontend udvikler, med en god forståelse for ui/ux design
-    </h1>
+    <h1>Mit navn er <b class="text-primary">Mads Lousdal</b></h1>
+    <p class="xlarge-text">
+      Jeg er en passioneret frontend udvikler, med en god forståelse for ui/ux
+      design
+    </p>
     <links size="l"></links>
     <arrow-down></arrow-down>
   </header>
+  <section class="wrapper flex column gap">
+    <h2>Projekter</h2>
+    <div class="projects">
+      <project-card></project-card>
+      <project-card></project-card>
+      <project-card></project-card>
+      <project-card></project-card>
+    </div>
+  </section>
 </template>
 
 <script>
 import Navbar from "../src/components/Navbar.vue";
 import Links from "../src/components/Links.vue";
 import ArrowDown from "../src/components/ArrowDown.vue";
+import ProjectCard from "../src/components/ProjectCard.vue";
 
 export default {
   name: "App",
-  components: { Navbar, Links, ArrowDown },
+  components: { Navbar, Links, ArrowDown, ProjectCard },
 };
 </script>
 

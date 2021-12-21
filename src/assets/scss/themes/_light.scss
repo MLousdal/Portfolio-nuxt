@@ -15,6 +15,7 @@
     --color-primary: hsl(212, 100%, 50%);
     --color-primary-dark: hsl(212, 100%, 40%);
     --color-primary-light: hsl(212, 100%, 60%);
+    --color-overlay: hsla(212, 100%, 50%, 0.15);
     --filter-primary: brightness(0) saturate(100%) invert(39%) sepia(75%) saturate(6272%) hue-rotate(204deg) brightness(105%) contrast(106%);
     --background-color: #{$neutral-95};
     --foreground-color: #{$neutral-100};

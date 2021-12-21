@@ -1,0 +1,9 @@
+@use "../base/variables" as *;
+
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  // grid-auto-rows: max-content;
+  gap: $unit-2;
+  justify-content: center;
+}
