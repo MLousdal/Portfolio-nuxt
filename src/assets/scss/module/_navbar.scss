@@ -1,8 +1,8 @@
 @use "../base/variables" as *;
 
 nav {
-  padding: $unit-1;
-  position: sticky;
+  padding: $unit-15 !important;
+  position: fixed;
   top: 0;
   z-index: 5;
 

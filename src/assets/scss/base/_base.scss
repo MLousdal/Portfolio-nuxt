@@ -12,11 +12,11 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
+#app {
     background-color: var(--background-color);
     // gaps in column layout
     display: flex;
     flex-flow: column nowrap;
     gap: $unit-4;
-    padding-bottom: $unit-2;
+    padding-bottom: $unit-4;
 }

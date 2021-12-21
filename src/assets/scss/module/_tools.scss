@@ -1,0 +1,29 @@
+@use "../base/variables" as *;
+
+.tools {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: $unit-1;
+}
+
+.tool {
+  display: flex;
+  flex-direction: column;
+  gap: $unit-05;
+  justify-content: center;
+  align-items: center;
+  flex: 0 1 115px;
+  filter: var(--filter-font-color);
+
+  img {
+      width: 25%;
+      min-width: $unit-2;
+  }
+
+  span {
+      color: initial;
+      margin-top: auto;
+  }
+}

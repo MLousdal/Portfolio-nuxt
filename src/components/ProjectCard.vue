@@ -1,5 +1,5 @@
 <template>
-  <article class="projectCard">
+  <article class="projectCard shadow">
     <a href="#" target="_blank" rel="noopener" class="cardOverlay">
       <picture>
         <source

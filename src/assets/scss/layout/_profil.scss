@@ -1,0 +1,23 @@
+@use "../base/variables" as *;
+
+.profil {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: $unit-2;
+
+  .text {
+    display: flex;
+    gap: $unit-1;
+    flex-direction: column;
+  }
+
+  picture {
+    
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+}

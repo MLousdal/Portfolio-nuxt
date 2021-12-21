@@ -4,7 +4,18 @@
     background-color: var(--foreground-color);
     width: 100%;
     padding: $unit-1;
+}
+
+.shadow {
     box-shadow: $shadow-normal var(--shadow);
+
+    &.small {
+        box-shadow: $shadow-normal-s var(--shadow);
+    }
+
+    &.large {
+        box-shadow: $shadow-normal-l var(--shadow);
+    }
 }
 
 // Base

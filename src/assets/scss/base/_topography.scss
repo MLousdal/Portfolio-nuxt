@@ -60,7 +60,7 @@ small {
 }
 
 .xlarge-text {
-    font-size: 2.25rem;
+    font-size: clamp(1.5rem, 5vw, 2.25rem);
 }
 
 .semi-bold,
