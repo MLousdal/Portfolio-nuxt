@@ -28,9 +28,9 @@
         />
       </picture>
     </a>
-    <div class="box flex column gap-1">
+    <div class="box flex column gap-1 projectCard--Text">
       <h4>webTemplate: Styled boilerplate</h4>
-      <div class="flex row between">
+      <div class="projectCard--Info">
         <div class="flex row gap-1">
           <a
             href="https://web-template-eight.vercel.app/showcase.html"
@@ -55,7 +55,7 @@
               class="icon s"
           /></a>
         </div>
-        <span class="small-text">HTML, SCSS, JS</span>
+        <span class="small-text">API, HTML, SCSS, JS</span>
       </div>
     </div>
   </article>

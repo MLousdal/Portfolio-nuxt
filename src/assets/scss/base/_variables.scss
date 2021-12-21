@@ -29,7 +29,7 @@ $border-radius-l: calc(#{$border-radius} * 1.5);
 $border-radius-o: calc(#{$border-radius} * 100);
 
 // Shadows 
-$shadow-offset: 0px 2px;
+$shadow-offset: 2px 2px;
 $shadow-normal: #{$shadow-offset} 4px 2px;
 $shadow-normal-s: #{$shadow-offset} 2px 0px;
 $shadow-normal-l: #{$shadow-offset} 8px 4px;

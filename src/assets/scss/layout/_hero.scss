@@ -12,4 +12,9 @@
   p {
     max-width: 35ch;
   }
+  @media screen and (max-width: 470px) {
+    p {
+      max-width: 90%;
+    }
+  }
 }

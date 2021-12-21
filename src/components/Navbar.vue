@@ -1,19 +1,28 @@
 <template>
-  <nav class="flex row gap box between">
-    <div class="flex row gap">
+  <nav class="box shadow">
+    <div class="navContainer">
       <a href="#" class="logo">
         <img src="../assets/images/ML.svg" alt="" />
       </a>
-      <ul class="flex row gap align-center">
-        <li><a href="#" class="underline">Projekter</a></li>
-        <li><a href="#" class="underline">Profil</a></li>
-        <li><a href="#" class="underline">Kontakt</a></li>
-      </ul>
+      <div class="navLinksContainer">
+        <ul class="navLinks">
+          <li><a href="#" class="underline">Projekter</a></li>
+          <li><a href="#" class="underline">Profil</a></li>
+          <li><a href="#" class="underline">Kontakt</a></li>
+        </ul>
+        <div class="navSocial">
+          <links size="m"></links>
+          <theme-toggle></theme-toggle>
+        </div>
+      </div>
     </div>
-    <div class="flex row gap">
-      <links size="m"></links>
-      <theme-toggle></theme-toggle>
-    </div>
+    <input
+      type="image"
+      src="mdi_menu.svg"
+      alt="menu"
+      class="icon filter-primary navBtn"
+      @click="toggleMenu"
+    />
   </nav>
 </template>
 
@@ -24,6 +33,17 @@ import Links from "./Links.vue";
 export default {
   name: "Navbar",
   components: { ThemeToggle, Links },
+  methods: {
+    toggleMenu() {
+      let navLinksContainer = document.querySelector(".navLinksContainer");
+
+    if (navLinksContainer.style.display == "none" || navLinksContainer.style.display == "") {
+        navLinksContainer.style.display = "flex";
+      } else {
+        navLinksContainer.style.display = "none";
+      }
+    },
+  },
 };
 </script>
 

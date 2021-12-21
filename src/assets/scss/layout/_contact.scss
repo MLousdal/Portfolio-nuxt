@@ -6,11 +6,12 @@
   padding: $unit-2 !important;
   gap: $unit-1;
   max-width: 600px;
-  
+  border-radius: $border-radius;
+
   hr {
     width: 100%;
   }
-  
+
   form {
     // padding: $unit-2;
     display: flex;
@@ -19,18 +20,18 @@
     gap: $unit-1;
 
     fieldset {
+      display: flex;
+      flex-direction: column;
+      gap: $unit-15;
+
+      & label {
         display: flex;
         flex-direction: column;
-        gap: $unit-15;
-
-        & label {
-            display: flex;
-            flex-direction: column;
-        }
+      }
     }
 
     button[type="submit"] {
       color: var(--font-color-inverse);
     }
-}
+  }
 }

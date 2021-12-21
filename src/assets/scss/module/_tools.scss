@@ -14,7 +14,7 @@
   gap: $unit-05;
   justify-content: center;
   align-items: center;
-  flex: 0 1 115px;
+  flex: 0 1 110px;
   filter: var(--filter-font-color);
 
   img {
@@ -25,5 +25,51 @@
   span {
       color: initial;
       margin-top: auto;
+  }
+}
+
+@media screen and (max-width: 1170px) {
+  .tool {
+    flex: 0 1 160px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .tool {
+    flex: 0 1 140px;
+  }
+}
+@media screen and (max-width: 920px) {
+  .tool {
+    flex: 0 1 125px;
+  }
+}
+@media screen and (max-width: 840px) {
+  .tool {
+    flex: 0 1 110px;
+  }
+}
+@media screen and (max-width: 755px) {
+  .tool {
+    flex: 0 1 100px;
+  }
+}
+@media screen and (max-width: 665px) {
+  .tool {
+    flex: 0 1 82px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .tool {
+    flex: 0 1 110px;
+  }
+}
+@media screen and (max-width: 456px) {
+  .tool {
+    flex: 0 1 44px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .tool {
+    flex: 0 1 0px;
   }
 }
