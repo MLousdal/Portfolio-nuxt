@@ -23,6 +23,7 @@
     <h2>Profil</h2>
     <profil></profil>
   </section>
+  <contact></contact>
 </template>
 
 <script>
@@ -31,10 +32,11 @@ import Links from "../src/components/Links.vue";
 import ArrowDown from "../src/components/ArrowDown.vue";
 import ProjectCard from "../src/components/ProjectCard.vue";
 import Profil from "../src/components/Profil.vue";
+import Contact from "../src/components/Contact.vue";
 
 export default {
   name: "App",
-  components: { Navbar, Links, ArrowDown, ProjectCard, Profil },
+  components: { Navbar, Links, ArrowDown, ProjectCard, Profil, Contact },
 };
 </script>
 

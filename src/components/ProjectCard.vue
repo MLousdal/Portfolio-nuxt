@@ -37,7 +37,8 @@
             class="btn btn-primary outline sm"
             target="_blank"
             rel="noopener"
-            >Se live <img
+            >Se live
+            <img
               src="../assets/images/icons/mdi_open-in-new.svg"
               alt="åben projektet i ny fane"
               class="icon s"
@@ -47,7 +48,8 @@
             class="btn btn-primary outline sm"
             target="_blank"
             rel="noopener"
-            >Github <img
+            >Github
+            <img
               src="../assets/images/icons/social/mdi_github.svg"
               alt="se koden på github"
               class="icon s"
@@ -64,10 +66,14 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
-  .btn.btn-primary.outline:hover {
+.btn.btn-primary.outline {
+  line-height: 0;
+  &:hover {
     color: var(--font-color-inverse);
-  
-  & .icon {
-    filter: var(--filter-font-color-inverse);
-  }}
+
+    & .icon {
+      filter: var(--filter-font-color-inverse);
+    }
+  }
+}
 </style>
