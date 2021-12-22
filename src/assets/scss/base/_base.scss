@@ -9,7 +9,7 @@
 }
 
 html {
-    scroll-behavior: smooth;
+    // scroll-behavior: smooth;
 }
 
 #app {
@@ -19,4 +19,11 @@ html {
     flex-flow: column nowrap;
     gap: $unit-4;
     padding-bottom: $unit-4;
+    min-height: 100vh;
 }
+
+@media screen and (max-width: 700px) {
+    #app {
+        gap: $unit-3;
+    }
+  }

@@ -18,13 +18,13 @@
   filter: var(--filter-font-color);
 
   img {
-      width: 25%;
-      min-width: $unit-2;
+    width: 25%;
+    min-width: $unit-2;
   }
 
   span {
-      color: initial;
-      margin-top: auto;
+    color: initial;
+    margin-top: auto;
   }
 }
 
@@ -65,11 +65,14 @@
 }
 @media screen and (max-width: 456px) {
   .tool {
-    flex: 0 1 44px;
+    flex: 0 1 80px;
   }
 }
-@media screen and (max-width: 400px) {
-  .tool {
-    flex: 0 1 0px;
-  }
-}
+// @media screen and (max-width: 400px) {
+//   .tools {
+//     gap: $unit-05;
+//   }
+//   .tool {
+//     flex: 0 1 0px;
+//   }
+// }

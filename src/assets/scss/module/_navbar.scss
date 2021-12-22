@@ -73,7 +73,7 @@ nav {
       display: block;
       cursor: pointer;
       pointer-events: all;
-      filter: var(--filter-primary)
+      filter: var(--filter-primary);
     }
     .navLinksContainer {
       display: none;
@@ -86,10 +86,8 @@ nav {
       border-radius: 0 0 0 $border-radius;
       gap: $unit-2;
       flex-direction: column;
-      // box-shadow: -9px 12px 50px 5px var(--shadow);
       box-shadow: -2px 2px var(--shadow);
     }
-    
 
     .navLinks {
       display: flex;

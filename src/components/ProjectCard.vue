@@ -1,6 +1,6 @@
 <template>
   <article class="projectCard shadow">
-    <a href="#" target="_blank" rel="noopener" class="cardOverlay">
+    <router-link to="/projekt/" href="#" class="cardOverlay">
       <picture>
         <source
           media="(max-width: 800px)"
@@ -27,34 +27,11 @@
           alt="mockup af projektet"
         />
       </picture>
-    </a>
+    </router-link>
     <div class="box flex column gap-1 projectCard--Text">
       <h4>webTemplate: Styled boilerplate</h4>
       <div class="projectCard--Info">
-        <div class="flex row gap-1">
-          <a
-            href="https://web-template-eight.vercel.app/showcase.html"
-            class="btn btn-primary outline sm"
-            target="_blank"
-            rel="noopener"
-            >Se live
-            <img
-              src="../assets/images/icons/mdi_open-in-new.svg"
-              alt="åben projektet i ny fane"
-              class="icon s"
-          /></a>
-          <a
-            href="https://github.com/MLousdal/webTemplate"
-            class="btn btn-primary outline sm"
-            target="_blank"
-            rel="noopener"
-            >Github
-            <img
-              src="../assets/images/icons/social/mdi_github.svg"
-              alt="se koden på github"
-              class="icon s"
-          /></a>
-        </div>
+        <project-links size="s"></project-links>
         <span class="small-text">API, HTML, SCSS, JS</span>
       </div>
     </div>
@@ -62,18 +39,12 @@
 </template>
 
 <script>
-export default {};
+import ProjectLinks from "../components/ProjectLinks.vue";
+
+export default {
+  name: "ProjectCard",
+  components: { ProjectLinks },
+};
 </script>
 
-<style lang="scss" scoped>
-.btn.btn-primary.outline {
-  line-height: 0;
-  &:hover {
-    color: var(--font-color-inverse);
-
-    & .icon {
-      filter: var(--filter-font-color-inverse);
-    }
-  }
-}
-</style>
+<style></style>
