@@ -1,29 +1,6 @@
 <template>
   <Navbar></Navbar>
-  <header class="hero wrapper">
-    <h2 class="wave">Hejsa</h2>
-    <h1>Mit navn er <b class="text-primary">Mads Lousdal</b></h1>
-    <p class="xlarge-text">
-      Jeg er en passioneret frontend udvikler, med en god forståelse for ui/ux
-      design
-    </p>
-    <links size="l"></links>
-    <arrow-down></arrow-down>
-  </header>
-  <section class="wrapper flex column gap">
-    <h2>Projekter</h2>
-    <div class="projects">
-      <project-card></project-card>
-      <project-card></project-card>
-      <project-card></project-card>
-      <project-card></project-card>
-    </div>
-  </section>
-  <section class="wrapper flex column gap">
-    <h2>Profil</h2>
-    <profil></profil>
-  </section>
-  <contact></contact>
+  <router-view></router-view>
 </template>
 
 <script>

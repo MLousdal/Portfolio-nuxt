@@ -1,5 +1,5 @@
 <template>
-  <section class="contact box wrapper">
+  <section class="contact box wrapper" id="contact">
     <h4>Vil du hører mere?</h4>
     <p>
       Jeg elsker at snakke om mine projekter, så synes du der er noget

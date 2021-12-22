@@ -1,6 +1,6 @@
 <template>
   <article class="profil">
-    <picture class="shadow">
+    <picture class="shadow l">
       <source
         media="(max-width: 800px)"
         srcset="

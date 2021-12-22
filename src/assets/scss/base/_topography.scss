@@ -180,6 +180,7 @@ a {
     &:focus {
         text-decoration: underline;
         color: var(--color-primary-light);
+        cursor: pointer;
     }
 }
 

@@ -1,14 +1,14 @@
 <template>
   <nav class="box shadow">
     <div class="navContainer">
-      <a href="#" class="logo">
+      <router-link to="/" class="logo">
         <img src="../assets/images/ML.svg" alt="" />
-      </a>
+      </router-link>
       <div class="navLinksContainer">
         <ul class="navLinks">
-          <li><a href="#" class="underline">Projekter</a></li>
-          <li><a href="#" class="underline">Profil</a></li>
-          <li><a href="#" class="underline">Kontakt</a></li>
+          <li><router-link to="/" @click="toSection('projects')" class="underline">Projekter</router-link></li>
+          <li><router-link to="/" @click="toSection('profil')" class="underline">Profil</router-link></li>
+          <li><router-link to="/" @click="toSection('contact')" class="underline">Kontakt</router-link></li>
         </ul>
         <div class="navSocial">
           <links size="m"></links>
@@ -37,10 +37,25 @@ export default {
     toggleMenu() {
       let navLinksContainer = document.querySelector(".navLinksContainer");
 
-    if (navLinksContainer.style.display == "none" || navLinksContainer.style.display == "") {
+      if (
+        navLinksContainer.style.display == "none" ||
+        navLinksContainer.style.display == ""
+      ) {
         navLinksContainer.style.display = "flex";
       } else {
         navLinksContainer.style.display = "none";
+      }
+    },
+    toSection(section) {
+      let id = "#" + section;
+      let el = document.querySelector(id);
+      let yOffset = -91;
+
+      if (el) {
+        const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+        window.scrollTo({ top: y, behavior: "smooth" });
+      } else {
+        this.$router.push('/')
       }
     },
   },

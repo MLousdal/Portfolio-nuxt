@@ -9,11 +9,11 @@
 .shadow {
     box-shadow: $shadow-normal var(--shadow);
 
-    &.small {
+    &.s {
         box-shadow: $shadow-normal-s var(--shadow);
     }
 
-    &.large {
+    &.l {
         box-shadow: $shadow-normal-l var(--shadow);
     }
 }

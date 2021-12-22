@@ -5,7 +5,7 @@
     alt="down arrow"
     class="arrow"
     title="scroll to projects"
-    @click="toProjects"
+    @click="toSection('projects')"
   />
 </template>
 
@@ -13,10 +13,17 @@
 export default {
   name: "ArrowDown",
   methods: {
-    toProjects() {
-      console.log("toProjects")
-    }
-  }
+    toSection(section) {
+      let id = "#" + section;
+      let el = document.querySelector(id);
+      let yOffset = -91;
+      const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+      if (el) {
+        window.scrollTo({ top: y, behavior: "smooth" });
+      }
+    },
+  },
 };
 </script>
 
