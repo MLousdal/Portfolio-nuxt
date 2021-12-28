@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_links_project_links",
+  "info": {
+    "displayName": "Project-links",
+    "icon": "network-wired"
+  },
+  "options": {},
+  "attributes": {
+    "Github": {
+      "type": "string"
+    },
+    "Live": {
+      "type": "string"
+    }
+  }
+}

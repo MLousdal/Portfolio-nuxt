@@ -20,7 +20,7 @@
   </section>
   <section class="wrapper flex column gap" id="profil">
     <h2>Profil</h2>
-    <profil></profil>
+    <profile></profile>
   </section>
   <contact></contact>
 </template>
@@ -30,12 +30,12 @@ import Navbar from "../../src/components/Navbar.vue";
 import SoMeLinks from "../components/SoMeLinks.vue";
 import ArrowDown from "../../src/components/ArrowDown.vue";
 import ProjectCard from "../../src/components/ProjectCard.vue";
-import Profil from "../../src/components/Profil.vue";
+import Profile from "../components/Profile.vue";
 import Contact from "../../src/components/Contact.vue";
 
 export default {
   name: "App",
-  components: { Navbar, SoMeLinks, ArrowDown, ProjectCard, Profil, Contact },
+  components: { Navbar, SoMeLinks, ArrowDown, ProjectCard, Profile, Contact },
 };
 </script>
 

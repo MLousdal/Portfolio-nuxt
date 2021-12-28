@@ -47,7 +47,7 @@
 import Tools from "./Tools.vue";
 
 export default {
-  name: "Profil",
+  name: "Profile",
   components: { Tools },
 };
 </script>

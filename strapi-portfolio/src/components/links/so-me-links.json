@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_links_so_me_links",
+  "info": {
+    "displayName": "SoMe-links",
+    "icon": "users"
+  },
+  "options": {},
+  "attributes": {
+    "Email": {
+      "type": "string"
+    },
+    "LinkedIn": {
+      "type": "string"
+    },
+    "Github": {
+      "type": "string"
+    }
+  }
+}
