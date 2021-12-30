@@ -17,7 +17,6 @@
           v-for="project in projects"
           :key="project.title"
           :project="project"
-          class="projectCard shadow"
         ></project-card>
       </div>
     </section>
