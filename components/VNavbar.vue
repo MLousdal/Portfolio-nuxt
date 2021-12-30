@@ -2,7 +2,7 @@
   <nav class="box shadow">
     <div class="navContainer">
       <nuxt-link to="/" class="logo">
-        <img src="~/assets/images/ML.svg" alt="" />
+        <img src="~/assets/ML.svg" alt="" />
       </nuxt-link>
       <div class="navLinksContainer">
         <ul class="navLinks">
@@ -26,7 +26,7 @@
     </div>
     <input
       type="image"
-      src="/mdi_menu.svg"
+      src="/icons/mdi_menu.svg"
       alt="menu"
       class="icon filter-primary navBtn"
       @click="toggleMenu"

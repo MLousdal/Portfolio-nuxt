@@ -190,7 +190,7 @@ a {
     &::after {
         content: "";
         filter: var(--filter-primary);
-        background-image: url(../images/icons/mdi_open-in-new.svg);
+        background-image: url('~assets/icons/mdi_open-in-new.svg');
         background-size: cover;
         position: relative;
         display: inline-block;

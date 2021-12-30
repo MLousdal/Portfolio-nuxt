@@ -11,48 +11,48 @@
 
 <script>
 export default {
-  methods: {
-    toggleTheme() {
-      if (document.body.classList.contains("theme-light")) {
-        document.body.classList.replace("theme-light", "theme-dark");
-      } else {
-        document.body.classList.replace("theme-dark", "theme-light");
-      }
-    },
-  },
   mounted() {
     const userPrefersDark =
       window.matchMedia &&
-      window.matchMedia("(prefers-color-scheme: dark)").matches;
+      window.matchMedia('(prefers-color-scheme: dark)').matches
     const userPrefersLight =
       window.matchMedia &&
-      window.matchMedia("(prefers-color-scheme: light)").matches;
+      window.matchMedia('(prefers-color-scheme: light)').matches
 
-    const themeToggler = document.querySelector(".themeToggler");
+    const themeToggler = document.querySelector('.themeToggler')
 
-    let sun = document.createElement("img");
-    sun.src = "mdi_white-balance-sunny.svg";
-    sun.classList = "icon s filter-font-color";
-    sun.alt = "";
+    const sun = document.createElement('img')
+    sun.src = '/icons/mdi_white-balance-sunny.svg'
+    sun.classList = 'icon s filter-font-color'
+    sun.alt = ''
 
-    let moon = document.createElement("img");
-    moon.src = "mdi_weather-night.svg";
-    moon.classList = "icon s filter-font-color";
-    moon.alt = "";
+    const moon = document.createElement('img')
+    moon.src = '/icons/mdi_weather-night.svg'
+    moon.classList = 'icon s filter-font-color'
+    moon.alt = ''
 
     if (userPrefersDark) {
-      document.body.className = "theme-dark";
-      themeToggler.prepend(moon);
-      themeToggler.append(sun);
+      document.body.className = 'theme-dark'
+      themeToggler.prepend(moon)
+      themeToggler.append(sun)
     }
 
     if (userPrefersLight) {
-      document.body.className = "theme-light";
-      themeToggler.prepend(sun);
-      themeToggler.append(moon);
+      document.body.className = 'theme-light'
+      themeToggler.prepend(sun)
+      themeToggler.append(moon)
     }
   },
-};
+  methods: {
+    toggleTheme() {
+      if (document.body.classList.contains('theme-light')) {
+        document.body.classList.replace('theme-light', 'theme-dark')
+      } else {
+        document.body.classList.replace('theme-dark', 'theme-light')
+      }
+    },
+  },
+}
 </script>
 
 <style lang="scss">

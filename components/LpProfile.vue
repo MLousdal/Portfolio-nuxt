@@ -1,24 +1,8 @@
 <template>
   <article class="profil">
     <picture class="shadow l">
-      <source
-        media="(max-width: 800px)"
-        srcset="
-          ../assets/images/about/madsLousdal.jpeg?width=1000&as=webp&quality=50
-        "
-        type="image/webp"
-      />
-      <source
-        media="(max-width: 800px)"
-        srcset="../assets/images/about/madsLousdal.jpeg?width=1000&quality=50"
-        type="image/jpeg"
-      />
-      <source
-        srcset="../assets/images/about/madsLousdal.jpeg?width=1000&as=webp"
-        type="image/webp"
-      />
       <img
-        src="../assets/images/about/madsLousdal.jpeg?width=1000"
+        src="/about/madsLousdal.jpeg"
         alt="billede af Mads"
       />
     </picture>
@@ -44,12 +28,12 @@
 </template>
 
 <script>
-import VTools from "./VTools.vue";
+import VTools from './VTools.vue'
 
 export default {
-  name: "LpProfile",
+  name: 'LpProfile',
   components: { VTools },
-};
+}
 </script>
 
 <style></style>

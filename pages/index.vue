@@ -13,10 +13,12 @@
     <section id="projects" class="wrapper flex column gap">
       <h2>Projekter</h2>
       <div class="projects">
-        <project-card></project-card>
-        <project-card></project-card>
-        <project-card></project-card>
-        <project-card></project-card>
+        <project-card
+          v-for="project in projects"
+          :key="project.title"
+          :project="project"
+          class="projectCard shadow"
+        ></project-card>
       </div>
     </section>
     <section id="profil" class="wrapper flex column gap">
@@ -29,5 +31,15 @@
 <script>
 export default {
   name: 'IndexPage',
+  async asyncData({ $content, params }) {
+    const projects = await $content('projekter', params.slug)
+      .only(['title', 'description', 'img', 'slug'])
+      .sortBy('createdAt', 'asc')
+      .fetch()
+
+    return {
+      projects,
+    }
+  },
 }
 </script>

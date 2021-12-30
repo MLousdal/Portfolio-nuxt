@@ -1,7 +1,7 @@
 <template>
   <input
     type="image"
-    src="mdi_arrow-down.svg"
+    src="icons/mdi_arrow-down.svg"
     alt="down arrow"
     class="arrow"
     title="scroll to projects"
@@ -14,9 +14,9 @@ export default {
   name: "ArrowDown",
   methods: {
     toSection(section) {
-      let id = "#" + section;
-      let el = document.querySelector(id);
-      let yOffset = -91;
+      const id = "#" + section;
+      const el = document.querySelector(id);
+      const yOffset = -91;
       const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
 
       if (el) {
