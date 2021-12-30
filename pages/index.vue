@@ -33,7 +33,7 @@ export default {
   name: 'IndexPage',
   async asyncData({ $content, params }) {
     const projects = await $content('projekter', params.slug)
-      .only(['title', 'description', 'img', 'slug'])
+      .only(['title', 'description', 'img', 'slug', 'tools'])
       .sortBy('createdAt', 'asc')
       .fetch()
 

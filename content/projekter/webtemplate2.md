@@ -3,7 +3,7 @@ title: webTemplate2
 description: Styled boilerplate
 slug: webtemplate2
 img: case_pictures_showcase.png
-tools: HTML, SASS, JavaScript, Github, Parcel
+tools: [HTML, SASS, JavaScript, Github, Parcel]
 github: https://github.com/MLousdal/webTemplate
 live: https://web-template-eight.vercel.app/showcase.html
 ---

@@ -11,7 +11,7 @@
           :github="project.github"
           :live="project.live"
         ></project-links>
-        <span class="small-text">API, HTML, SCSS, JS</span>
+        <span class="small-text">{{ toolsString }}</span>
       </div>
     </div>
   </article>
@@ -24,6 +24,12 @@ export default {
     project: {
       default() {},
       type: Object,
+    },
+  },
+  computed: {
+    toolsString() {
+      const slicedArray = this.project.tools.slice(0, 4)
+      return slicedArray.join(' + ')
     },
   },
 }
