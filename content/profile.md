@@ -15,4 +15,4 @@ Når jeg ikke sidder foran computeren kan jeg ofte findes i det nærmeste fitnes
 
 ### Min værktøjskasse
 
-<v-tools :tools="tools"></v-tools>
+<v-tools :tools="tools" class="profile"></v-tools>

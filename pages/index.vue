@@ -22,7 +22,7 @@
     </section>
     <section id="profil" class="wrapper flex column gap" data-aos="fade-up">
       <h2>Profil</h2>
-      <lp-profile></lp-profile>
+      <lp-profile :profile="profile[0]"></lp-profile>
     </section>
   </div>
 </template>
@@ -35,11 +35,13 @@ export default {
   async asyncData({ $content, params }) {
     const projects = await $content('projekter')
       .only(['title', 'description', 'img', 'slug', 'tools', 'live', 'github'])
-      .sortBy('createdAt', 'asc')
+      .sortBy('title', 'desc')
       .fetch()
 
+    const profile = await $content('').fetch()
+
     return {
-      projects,
+      projects, profile
     }
   },
 }
