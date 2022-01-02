@@ -1,0 +1,20 @@
+@use "../base/variables" as *;
+
+.hero {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: $unit-3;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+
+  p {
+    max-width: 35ch;
+  }
+  @media screen and (max-width: 470px) {
+    p {
+      max-width: 90%;
+    }
+  }
+}

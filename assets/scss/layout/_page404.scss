@@ -1,0 +1,12 @@
+@use "../base/variables" as *;
+
+.page404 {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: $unit-2;
+}

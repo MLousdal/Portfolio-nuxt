@@ -1,0 +1,38 @@
+@use "../base/variables" as *;
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  padding: $unit-2 !important;
+  gap: $unit-1;
+  max-width: 600px;
+  border-radius: $border-radius;
+
+  hr {
+    width: 100%;
+  }
+
+  form {
+    // padding: $unit-2;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: $unit-1;
+
+    fieldset {
+      display: flex;
+      flex-direction: column;
+      gap: $unit-15;
+
+      & label {
+        display: flex;
+        flex-direction: column;
+        gap: $unit-05;
+      }
+    }
+
+    button[type="submit"] {
+      color: var(--font-color-inverse);
+    }
+  }
+}

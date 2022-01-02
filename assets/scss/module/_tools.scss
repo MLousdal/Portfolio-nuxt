@@ -1,0 +1,84 @@
+@use "../base/variables" as *;
+
+.tools {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: $unit-1;
+
+  &.profile {
+    & .tool {
+      flex: 0 1 110px;
+    }
+  }
+}
+
+.tool {
+  display: flex;
+  flex-direction: column;
+  gap: $unit-05;
+  justify-content: center;
+  align-items: center;
+  flex: 0 1 70px;
+  filter: var(--filter-font-color);
+
+  img {
+    width: 25%;
+    min-width: $unit-2;
+  }
+
+  span {
+    color: initial;
+    margin-top: auto;
+  }
+}
+
+@media screen and (max-width: 1170px) {
+  .tool {
+    flex: 0 1 160px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .tool {
+    flex: 0 1 140px;
+  }
+}
+@media screen and (max-width: 920px) {
+  .tool {
+    flex: 0 1 125px;
+  }
+}
+@media screen and (max-width: 840px) {
+  .tool {
+    flex: 0 1 110px;
+  }
+}
+@media screen and (max-width: 755px) {
+  .tool {
+    flex: 0 1 100px;
+  }
+}
+@media screen and (max-width: 665px) {
+  .tool {
+    flex: 0 1 82px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .tool {
+    flex: 0 1 110px;
+  }
+}
+@media screen and (max-width: 456px) {
+  .tool {
+    flex: 0 1 80px;
+  }
+}
+// @media screen and (max-width: 400px) {
+//   .tools {
+//     gap: $unit-05;
+//   }
+//   .tool {
+//     flex: 0 1 0px;
+//   }
+// }

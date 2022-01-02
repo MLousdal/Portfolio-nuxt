@@ -1,0 +1,56 @@
+@use "../base/variables" as *;
+
+.projectCard {
+  position: relative;
+
+  .cardOverlay {
+    display: block;
+    width: 100%;
+    position: relative;
+    border-radius: $border-radius $border-radius 0 0;
+
+    &::after {
+      content: "";
+      background: var(--color-primary-overlay);
+      border-radius: $border-radius $border-radius 0 0;
+      height: 100%;
+      position: absolute;
+      bottom: 0;
+      transition: height 0.3s ease-in;
+      width: 100%;
+    }
+    &:hover::after,
+    &:focus::after {
+      height: 0%;
+    }
+    img {
+      object-fit: cover;
+      object-position: center;
+      border-radius: $border-radius $border-radius 0 0;
+    }
+  }
+
+  .projectCard--Info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .projectCard--Text {
+    border-radius: 0 0 $border-radius $border-radius;
+
+    h4 {
+      text-align: center;
+    }
+  }
+  
+  @media screen and (max-width: 980px) {
+    .projectCard--Info {
+      display: flex;
+      flex-direction: column-reverse;
+      gap: $unit-1;
+    }
+  }
+}
+

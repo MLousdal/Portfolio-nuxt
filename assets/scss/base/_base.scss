@@ -1,0 +1,25 @@
+@use "../base/variables" as *;
+
+* {
+    box-sizing: border-box;
+    &::before,
+    &::after {
+        box-sizing: inherit;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--background-color);
+    padding-bottom: $unit-4;
+    min-height: 100vh;
+}
+
+@media screen and (max-width: 700px) {
+    #app {
+        gap: $unit-3;
+    }
+  }
