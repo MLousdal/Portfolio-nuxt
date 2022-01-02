@@ -50,6 +50,8 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
+    '@nuxtjs/sitemap',
+    '@nuxtjs/robots',
   ],
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
@@ -57,4 +59,21 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
+
+  sitemap: {
+    hostname: 'https://example.com',
+    gzip: true,
+    routes: [
+      '/projekter/diceonice',
+      '/projekter/toolbox',
+      '/projekter/webtemplate',
+    ],
+  },
+
+  robots: {
+    UserAgent: '*',
+    Disallow: '',
+    Sitemap: "https://madslousdal.com/sitemap.xml",
+    CrawlDelay: 10
+  },
 }

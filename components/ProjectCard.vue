@@ -1,7 +1,12 @@
 <template>
   <article class="projectCard shadow">
-    <nuxt-link :to="`projekter/${project.slug}`" href="#" class="cardOverlay">
-      <nuxt-picture :src="`cases/${project.img}`"></nuxt-picture>
+    <nuxt-link
+      :to="`projekter/${project.slug}`"
+      href="#"
+      class="cardOverlay"
+      :aria-label="`link til ${project.title}`"
+    >
+      <nuxt-picture :src="`cases/${project.img}`" alt=""></nuxt-picture>
     </nuxt-link>
     <div class="box flex column gap-1 projectCard--Text">
       <h4>{{ project.title }}: {{ project.description }}</h4>

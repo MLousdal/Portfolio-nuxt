@@ -1,7 +1,7 @@
 <template>
   <nav class="box shadow">
     <div class="navContainer">
-      <nuxt-link to="/" class="logo">
+      <nuxt-link to="/" class="logo" aria-label="home">
         <img src="~/assets/ML.svg" alt="" />
       </nuxt-link>
       <div class="navLinksContainer">
