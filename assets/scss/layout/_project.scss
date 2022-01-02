@@ -22,13 +22,18 @@
     gap: $unit-2;
     justify-content: center;
 
-    picture {
-      img {
-        border-radius: $border-radius;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center;
+    .showcase--Mockups {
+      display: grid;
+      gap: $unit-1;
+
+      picture {
+        img {
+          border-radius: $border-radius;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+        }
       }
     }
 

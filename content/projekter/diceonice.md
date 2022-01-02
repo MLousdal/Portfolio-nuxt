@@ -3,7 +3,7 @@ title: Dice on ice
 description: Digitalt terninge spil
 slug: diceonice
 img: case_pictures_dice.png
-mockups: [smartmockups_kxc9tbgi.jpg]
+mockups: [doi-mockup-1.jpg]
 tools: [HTML, SASS, JavaScript, Github, Parcel]
 github: https://github.com/MLousdal/Dice-Rolling-Game
 live: https://dice-rolling-game.vercel.app/

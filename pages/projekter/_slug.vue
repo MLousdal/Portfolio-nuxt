@@ -12,7 +12,13 @@
     <main class="wrapper showcase">
       <h2>Hvad er {{ project.title }}?</h2>
       <section class="showcase--Wrapper">
-        <nuxt-picture :src="`cases/${project.img}`"></nuxt-picture>
+        <div class="showcase--Mockups">
+          <nuxt-picture
+            v-for="mockup in project.mockups"
+            :key="mockup"
+            :src="`cases/${mockup}`"
+          ></nuxt-picture>
+        </div>
         <article class="box text">
           <nuxt-content
             :document="project"

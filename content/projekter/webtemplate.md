@@ -3,7 +3,7 @@ title: webTemplate
 description: Styled boilerplate
 slug: webtemplate
 img: case_pictures_showcase.png
-mockups: [smartmockups_kxc9tbgi.jpg]
+mockups: [wt-mockup-1.jpg]
 tools: [HTML, SASS, JavaScript, Github, Parcel]
 github: https://github.com/MLousdal/webTemplate
 live: https://web-template-eight.vercel.app/showcase.html

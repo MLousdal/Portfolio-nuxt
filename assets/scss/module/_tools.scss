@@ -6,6 +6,12 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: $unit-1;
+
+  &.profile {
+    & .tool {
+      flex: 0 1 110px;
+    }
+  }
 }
 
 .tool {

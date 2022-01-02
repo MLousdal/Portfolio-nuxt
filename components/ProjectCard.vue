@@ -28,7 +28,7 @@ export default {
   },
   computed: {
     toolsString() {
-      const slicedArray = this.project.tools.slice(0, 4)
+      const slicedArray = this.project.tools.slice(0, 3)
       return slicedArray.join(' + ')
     },
   },

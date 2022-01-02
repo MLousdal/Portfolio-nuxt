@@ -22,7 +22,7 @@
         at løfte hele verden.
       </p>
       <h3>Min værktøjskasse</h3>
-      <v-tools></v-tools>
+      <v-tools :tools="tools" class="profile"></v-tools>
     </section>
   </article>
 </template>
@@ -33,6 +33,11 @@ import VTools from './VTools.vue'
 export default {
   name: 'LpProfile',
   components: { VTools },
+  data() {
+    return {
+      tools: ["HTML", "CSS", "SASS", "JavaScript", "Vue", "NodeJS", "Github", "Parcel", "Figma"]
+    }
+  }
 }
 </script>
 
