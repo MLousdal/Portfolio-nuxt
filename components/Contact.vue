@@ -1,5 +1,5 @@
 <template>
-  <section id="contact" class="contact box wrapper" >
+  <section id="contact" class="contact box wrapper">
     <h4>Vil du hører mere?</h4>
     <p>
       Jeg elsker at snakke om mine projekter, så synes du der er noget
@@ -22,6 +22,7 @@
             id="full-name"
             placeholder="Dit navn (skal udfyldes)"
             required=""
+            class="input"
           />
         </label>
         <label for="email-address"
@@ -50,11 +51,11 @@
 </template>
 
 <script>
-export default {};
+export default {}
 </script>
 
 <style lang="scss" scoped>
-button[type="submit"].btn-primary {
+button[type='submit'].btn-primary {
   color: var(--font-color-inverse);
 }
 </style>
