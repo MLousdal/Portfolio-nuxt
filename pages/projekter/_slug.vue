@@ -8,7 +8,10 @@
         :live="project.live"
       ></project-links>
     </header>
-    <nuxt-picture :src="`cases/${project.img}`" class="wrapper"></nuxt-picture>
+    <nuxt-picture
+      :src="`cases/${project.img}`"
+      class="wrapper"
+    ></nuxt-picture>
     <main class="wrapper showcase">
       <h2>Hvad er {{ project.title }}?</h2>
       <section class="showcase--Wrapper">
@@ -17,9 +20,10 @@
             v-for="mockup in project.mockups"
             :key="mockup"
             :src="`cases/${mockup}`"
+            data-aos="fade-up"
           ></nuxt-picture>
         </div>
-        <article class="box text">
+        <article class="box text" data-aos="fade-up">
           <nuxt-content
             :document="project"
             class="flex column gap-1"

@@ -1,17 +1,13 @@
 <template>
   <div class="gaps">
-    <navbar></navbar>
+    <v-navbar></v-navbar>
     <nuxt></nuxt>
-    <contact></contact>
+    <contact data-aos="fade-up"></contact>
   </div>
 </template>
 
 <script>
-import Contact from '../components/Contact.vue'
-import Navbar from '../components/VNavbar.vue'
-export default {
-  components: { Contact, Navbar },
-}
+export default {}
 </script>
 
 <style></style>

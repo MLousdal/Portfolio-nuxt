@@ -13,7 +13,7 @@ live: https://dice-rolling-game.vercel.app/
 
 Dice on ice er et mini-projekt der blev udviklet som del af Hacktoberfest 2021. Udfordringen fra javascript-mini-projects lød at løse opgaven uden at anvende et framework.
 
-### Reglerne
+#### Reglerne
 
 - Spillerne skiftes til at slå med terningen, man må slå indtil terningen viser 1
 - Slås en 1’er nulstilles de akkumulerede point

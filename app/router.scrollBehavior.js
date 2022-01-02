@@ -6,5 +6,12 @@ export default function (to, from, savedPosition) {
       behavior: 'smooth',
     }
   }
-  return { x: 0, y: 0 }
+  if (from.path === '/' && to.path === '/') {
+    console.log("here")
+    return {
+      x: 0,
+      y: 0,
+      behavior: 'smooth',
+    }
+  }
 }
