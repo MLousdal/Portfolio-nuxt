@@ -61,7 +61,7 @@ export default {
   build: {},
 
   sitemap: {
-    hostname: 'https://example.com',
+    hostname: 'https://madslousdal.com',
     gzip: true,
     routes: [
       '/projekter/diceonice',
