@@ -1,6 +1,6 @@
 ---
 img: madsLousdal.jpeg
-tools: [HTML, CSS, SASS, JavaScript, Vue, NodeJS, Github, Parcel, Figma]
+tools: [HTML, CSS, SASS, JavaScript, Vue, NodeJS, NuxtJS, Github, Parcel, Figma]
 ---
 
 ### Beskrivelse
