@@ -6,12 +6,10 @@ export default function (to, from, savedPosition) {
       behavior: 'smooth',
     }
   }
-  if (from.path === '/' && to.path === '/') {
-    console.log("here")
-    return {
-      x: 0,
-      y: 0,
-      behavior: 'smooth',
-    }
-  }
+
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve({ x: 0, y: 0, behavior: 'instant' })
+    }, 190)
+  })
 }

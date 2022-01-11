@@ -1,0 +1,14 @@
+@use "../base/variables" as *;
+
+.nuxt-content {
+  display: flex;
+  flex-direction: column;
+  gap: $unit-1;
+
+  &.offset-top {
+    margin-top: $unit-2;
+  }
+  &.offset-bottom {
+    margin-bottom: $unit-2;
+  }
+}

@@ -42,6 +42,11 @@ export default {
       project,
     }
   },
+  head() {
+    return {
+      title: 'Mads Lousdal - ' + this.project.title,
+    }
+  },
 }
 </script>
 
