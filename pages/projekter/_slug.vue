@@ -8,10 +8,7 @@
         :live="project.live"
       ></project-links>
     </header>
-    <nuxt-picture
-      :src="`cases/${project.img}`"
-      class="wrapper"
-    ></nuxt-picture>
+    <nuxt-picture :src="`cases/${project.img}`" class="wrapper"></nuxt-picture>
     <main class="wrapper showcase">
       <h2>Hvad er {{ project.title }}?</h2>
       <section class="showcase--Wrapper">
@@ -35,7 +32,9 @@
 </template>
 
 <script>
+import aos from '~/mixins/aos'
 export default {
+  mixins: [aos],
   async asyncData({ $content, params }) {
     const project = await $content('projekter', params.slug).fetch()
 

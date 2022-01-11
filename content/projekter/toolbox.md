@@ -3,7 +3,7 @@ title: Toolbox
 description: Samling af digitale værktøjer
 slug: toolbox
 img: case_pictures_toolbox.jpg
-mockups: [tb-mockup-1.jpg, tb-mockup-2.jpg]
+mockups: [tb-multi.png, tb-multi2.png]
 tools: [SASS, JavaScript, NodeJS, Github, MySQL]
 github: https://github.com/MLousdal/Toolbox
 live: https://toolbox-alpha.vercel.app/

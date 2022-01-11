@@ -3,7 +3,7 @@ title: Dice on ice
 description: Digitalt terninge spil
 slug: diceonice
 img: case_pictures_dice.png
-mockups: [doi-mockup-1.jpg]
+mockups: [doi-multi.png]
 tools: [HTML, SASS, JavaScript, Github, Parcel]
 github: https://github.com/MLousdal/Dice-Rolling-Game
 live: https://dice-rolling-game.vercel.app/
@@ -11,7 +11,7 @@ live: https://dice-rolling-game.vercel.app/
 
 ### Beskrivelse
 
-Dice on ice er et mini-projekt der blev udviklet som del af Hacktoberfest 2021. Udfordringen fra javascript-mini-projects lød at løse opgaven uden at anvende et framework.
+Dice on ice er et mini-projekt der blev udviklet som del af Hacktoberfest 2021. Udfordringen fra <a class="external-link" target="_blank" rel="noopener" href="https://github.com/thinkswell/javascript-mini-projects/">javascript-mini-projects</a> lød at løse opgaven uden at anvende et javascript framework.
 
 #### Reglerne
 
