@@ -11,7 +11,7 @@ live: https://toolbox-alpha.vercel.app/
 
 ### Beskrivelse
 
-Toolbox er in full-stack web app som min gruppe udviklede som eksamensprojekt på 3. semester af multimediedesign uddannelsen.
+Toolbox er in full-stack web app som min gruppe udviklede som valgfags eksamensprojekt på 3. semester af multimediedesign uddannelsen.
 
 Ideen med Toolbox er at være en central kilde til at finde online værktøjer, som kan bruges til at lave hjemmesider, så man slipper for det rod af bogmærker man let laver. Intensionen med toolbox er ikke at tilbyde værktøjerne selv, men at fungere som en guide bog, og pege brugerne i den rigtige retning.
 

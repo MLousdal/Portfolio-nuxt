@@ -1,5 +1,5 @@
 ---
-title: Venstres ungdom
+title: Venstres Ungdom
 description: Præsentationsside
 slug: venstres-ungdom
 img: case_pictures_VU.jpg
@@ -11,21 +11,19 @@ live: https://mmd-3-vu.vercel.app/
 
 ### Beskrivelse
 
-Toolbox er in full-stack web app som min gruppe udviklede som eksamensprojekt på 3. semester af multimediedesign uddannelsen.
+Til eksamen på 3. semester af multimediedesign uddannelsen lavede min gruppe et redesign af Venstres Ungdoms hjemmeside.
 
-Ideen med Toolbox er at være en central kilde til at finde online værktøjer, som kan bruges til at lave hjemmesider, så man slipper for det rod af bogmærker man let laver. Intensionen med toolbox er ikke at tilbyde værktøjerne selv, men at fungere som en guide bog, og pege brugerne i den rigtige retning.
+Venstres Ungdom ønskede optimering, redesign af deres <a class="external-link" target="_blank" rel="noopener" href="https://web.archive.org/web/20210613005818/https://vu.dk/">hjemmeside</a>, som ikke er blevet opdateret længe, og ikke længere reflektere deres værdier. Hovedmålet var derfor at præsentere deres politik på en fordelagtig  måde, som i sidste ende skal tiltrække flere medlemmer til organisationen.
+
+Projektet er skrevet i Vue, med NuxtJS som framework. Gruppen besluttede at anvende NuxtJS pga. modulet content, som fungere som et git-baseret headless CMS skrevet i markdown.
+
+Alle hjemmesidens sider er derfor dynamisk genereret ud fra CMS'et, hvilket var rigtig spændende at få til at fungere korrekt.
 
 #### Funktioner
 
-Toolbox er en fælleskabsbaseret tjeneste hvor brugerne indsender de værktøjer som de selv bruger. Derfor havde vi specielt fokus på at optimere netop det da vi implementerede funktionalitet.
-
-- Hvert værktøj er kategoriseret i enten design, UX, front-end, eller back-end
-- Bruger autentificering (login og signup)
-- Brugere kan tilføje nye værktøjer til Toolbox
-- Brugere kan tilføje deres ynglings værktøjer til en privat kollektion
-- Brugere kan opdatere de værktøjer som de selv har indsendt
-- Admins har rettigheder til at ændre eller slette alle værktøjer
-- Der er lys, og mørkt farve temaer (kan skiftes mellem ved at trykke 1)
+- Navigations baren får tilføjet en skygge når siden bliver scrollet ned
+- Sub-card komponenten kan tilpasse sig flere forskellige typer data, og er derfor meget genanvendelig
+- Sub-nav komponenten er side navigationen som kan findes på alle undersider, hvor den dynamisk bliver fodret med links
 
 ### Bygget med
 
