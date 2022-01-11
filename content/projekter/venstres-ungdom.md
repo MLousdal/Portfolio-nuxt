@@ -3,7 +3,7 @@ title: Venstres ungdom
 description: Præsentationsside
 slug: venstres-ungdom
 img: case_pictures_VU.jpg
-mockups: [tb-multi.png, tb-multi2.png]
+mockups: [vu-multi.png, vu-multi2.png]
 tools: [SASS, Vue, NuxtJS, Github, Figma]
 github: https://github.com/MLousdal/MMD3-VU
 live: https://mmd-3-vu.vercel.app/
