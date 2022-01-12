@@ -1,14 +1,16 @@
 @use "../base/variables" as *;
 
 #toTopBtn {
-    display: none;
     position: fixed;
-    bottom: 20px;
-    right: 30px;
-    z-index: 50;
+    bottom: $unit-2;
+    right: $unit-2;
+    width: $unit-1;
+    height: $unit-1;
+    z-index: 5;
     border: none;
-    background-color: var(--color-secondary);
+    background-color: var(--color-primary);
     cursor: pointer;
-    padding: $unit-1;
+    padding: $unit-05;
     border-radius: $border-radius;
+    box-sizing: content-box;
 }

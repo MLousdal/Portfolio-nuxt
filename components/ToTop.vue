@@ -1,37 +1,61 @@
 <template>
-  <input
+  <button
+    v-if="isVisible"
     id="toTopBtn"
-    type="image"
-    src="~/assets/icons/arrow-up-solid.svg"
-    alt=""
-    title="back to top"
-    @click="toTop"
-  />
+    aria-label="Back to top"
+    @click="goToTop(duration)"
+  >
+    <img src="/icons/arrow-up-solid.svg" class="filter-font-color-inverse" alt="" />
+  </button>
 </template>
 
 <script>
+// Code inspired by https://github.com/asdf1899/vue-simple-scroll-up
+
 export default {
   name: 'ToTop',
-  computed: {
-    toTopBtn: document.querySelector('#toTopBtn'),
+  props: {
+    visibleY: {
+      type: Number,
+      default: 100,
+    },
+    duration: {
+      type: Number,
+      default: 100,
+    },
+  },
+  data() {
+    return {
+      isVisible: false,
+    }
   },
   mounted() {
-    window.addEventListener('scroll', this.scrollFunction)
+    window.addEventListener('scroll', this.scrollEvent)
+  },
+  destroyed() {
+    window.removeEventListener('scroll', this.scrollEvent)
   },
   methods: {
-    scrollFunction() {
-      if (
-        document.body.scrollTop > 20 ||
-        document.documentElement.scrollTop > 20
-      ) {
-        this.toTopBtn.style.display = 'block'
-      } else {
-        this.toTopBtn.style.display = 'none'
-      }
+    scrollEvent() {
+      this.isVisible = this.visibleY < window.scrollY
     },
-    toTop() {
-      document.body.scrollTop = 0
-      document.documentElement.scrollTop = 0
+    goToTop(duration) {
+      if (document.scrollingElement.scrollTop === 0) return
+      const totalScrollDistance = document.scrollingElement.scrollTop
+      let scrollY = totalScrollDistance
+      let oldTimestamp = null
+
+      function step(newTimestamp) {
+        if (oldTimestamp !== null) {
+          scrollY -=
+            (totalScrollDistance * (newTimestamp - oldTimestamp)) / duration
+          if (scrollY <= 0) return (document.scrollingElement.scrollTop = 0)
+          document.scrollingElement.scrollTop = scrollY
+        }
+        oldTimestamp = newTimestamp
+        window.requestAnimationFrame(step)
+      }
+      window.requestAnimationFrame(step)
     },
   },
 }
