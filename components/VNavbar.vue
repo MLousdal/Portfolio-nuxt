@@ -1,19 +1,36 @@
 <template>
   <nav class="box shadow navbar">
     <div class="navContainer">
-      <nuxt-link to="/" class="logo" aria-label="home" @click.native="closeMenu">
+      <nuxt-link
+        to="/"
+        class="logo"
+        aria-label="home"
+        @click.native="closeMenu"
+      >
         <img src="~/assets/ML.svg" alt="" />
       </nuxt-link>
-      <div class="navLinksContainer">
+      <div v-show="menuOpen" class="navLinksContainer">
         <ul class="navLinks">
           <li>
-            <nuxt-link to="/#projects" class="underline" @click.native="closeMenu">Projekter</nuxt-link>
+            <nuxt-link
+              to="/#projects"
+              class="underline"
+              @click.native="closeMenu"
+              >Projekter</nuxt-link
+            >
           </li>
           <li>
-            <nuxt-link to="/#profil" class="underline" @click.native="closeMenu">Profil</nuxt-link>
+            <nuxt-link to="/#profil" class="underline" @click.native="closeMenu"
+              >Profil</nuxt-link
+            >
           </li>
           <li>
-            <nuxt-link to="/#contact" class="underline" @click.native="closeMenu">Kontakt</nuxt-link>
+            <nuxt-link
+              to="/#contact"
+              class="underline"
+              @click.native="closeMenu"
+              >Kontakt</nuxt-link
+            >
           </li>
         </ul>
         <div class="navSocial">
@@ -22,13 +39,12 @@
         </div>
       </div>
     </div>
-    <input
-      type="image"
-      src="/icons/mdi_menu.svg"
-      alt="menu"
-      class="icon filter-primary navBtn"
-      @click="toggleMenu"
-    />
+    <input id="navbar_checkbox" v-model="menuOpen" type="checkbox" />
+    <label for="navbar_checkbox" class="navBtn">
+      <div></div>
+      <div></div>
+      <div></div>
+    </label>
   </nav>
 </template>
 
@@ -37,35 +53,26 @@ export default {
   name: 'VNavbar',
   data() {
     return {
-      menuOpen: false,
+      menuOpen: true,
     }
   },
   mounted() {
-    document.addEventListener('resize', this.mqResize)
+    window.addEventListener('resize', this.mqResize)
     document.addEventListener('mouseup', (e) => {
       // bruger en arrow function for at overkomme problem med at this. skifter til
       this.handleOutside(e)
     })
     this.mqResize()
   },
-  beforeDestroy() {
-    document.removeEventListener('mouseup', (e) => {
-      this.handleOutside(e)
-    })
-  },
   methods: {
     closeMenu() {
-      const navLinksContainer = document.querySelector('.navLinksContainer')
       if (window.innerWidth < 800) {
-        navLinksContainer.classList.add('hide')
-        this.menuOpen = true
+        this.menuOpen = false
       }
     },
     openMenu() {
-      const navLinksContainer = document.querySelector('.navLinksContainer')
       if (window.innerWidth < 800) {
-        navLinksContainer.classList.remove('hide')
-        this.menuOpen = false
+        this.menuOpen = true
       }
     },
     handleOutside(e) {
@@ -73,25 +80,15 @@ export default {
       if (window.innerWidth < 800) {
         if (!navbar.contains(e.target)) {
           this.closeMenu()
-        } else {
-          this.openMenu()
         }
-      }
-    },
-    toggleMenu() {
-      if (this.menuOpen === false) {
-        this.openMenu()
-      } else {
-        this.closeMenu()
       }
     },
     mqResize() {
       const mql = window.matchMedia('(max-width: 800px)')
-      const navLinksContainer = document.querySelector('.navLinksContainer')
       if (mql.matches) {
-        navLinksContainer.classList.add('hide')
+        this.menuOpen = false
       } else {
-        navLinksContainer.classList.remove('hide')
+        this.menuOpen = true
       }
     },
   },
