@@ -6,7 +6,7 @@ img: case_pictures_showcase.png
 mockups: [wt-desktop.png]
 tools: [HTML, SASS, JavaScript, Github, Parcel]
 github: https://github.com/MLousdal/webTemplate
-live: https://web-template-eight.vercel.app/showcase.html
+live: https://web-template-eight.vercel.app
 ---
 
 ### Beskrivelse
