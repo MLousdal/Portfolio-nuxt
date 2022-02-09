@@ -13,20 +13,32 @@
         <ul class="navLinks">
           <li>
             <nuxt-link
-              to="/#projects"
+              :to="{
+                name: 'index',
+                hash: '#projects',
+              }"
               class="underline"
               @click.native="closeMenu"
               >Projekter</nuxt-link
             >
           </li>
           <li>
-            <nuxt-link to="/#profil" class="underline" @click.native="closeMenu"
+            <nuxt-link
+              :to="{
+                name: 'index',
+                hash: '#profil',
+              }"
+              class="underline"
+              @click.native="closeMenu"
               >Profil</nuxt-link
             >
           </li>
           <li>
             <nuxt-link
-              to="/#contact"
+              :to="{
+                name: 'index',
+                hash: '#contact',
+              }"
               class="underline"
               @click.native="closeMenu"
               >Kontakt</nuxt-link
