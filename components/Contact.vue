@@ -1,5 +1,5 @@
 <template>
-  <section id="contact" class="contact box wrapper">
+  <section id="contact" class="contact box wrapper shadow">
     <h4>Vil du hører mere?</h4>
     <p>
       Jeg elsker at snakke om mine projekter, så synes du der er noget
@@ -17,9 +17,9 @@
         <label for="full-name"
           >Dit navn:
           <input
+            id="full-name"
             type="text"
             name="name"
-            id="full-name"
             placeholder="Dit navn (skal udfyldes)"
             required=""
             class="input"
@@ -28,9 +28,9 @@
         <label for="email-address"
           >Din email:
           <input
+            id="email-address"
             type="email"
             name="_replyto"
-            id="email-address"
             placeholder="Din email (skal udfyldes)"
             required=""
           />
@@ -38,9 +38,9 @@
         <label for="message"
           >Besked:
           <textarea
+            id="message"
             rows="5"
             name="message"
-            id="message"
             placeholder="Skriv beskeden her.."
           ></textarea>
         </label>

@@ -1,4 +1,4 @@
-@use "../base/variables" as *;
+@use '../base/variables' as *;
 
 .tools {
   display: flex;
@@ -31,6 +31,7 @@
   span {
     color: initial;
     margin-top: auto;
+    white-space: nowrap;
   }
 }
 

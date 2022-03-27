@@ -20,7 +20,7 @@
             data-aos="fade-up"
           ></nuxt-picture>
         </div>
-        <article class="box text" data-aos="fade-up">
+        <article class="box text shadow" data-aos="fade-up">
           <nuxt-content
             :document="project"
             class="flex column gap-1"

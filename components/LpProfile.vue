@@ -5,7 +5,7 @@
       alt="billede af Mads"
       class="shadow l"
     ></nuxt-picture>
-    <nuxt-content :document="profile" class="box text"></nuxt-content>
+    <nuxt-content :document="profile" class="box text shadow"></nuxt-content>
   </article>
 </template>
 

@@ -4,14 +4,14 @@ description: Digitalt terninge spil
 slug: diceonice
 img: case_pictures_dice.png
 mockups: [doi-desktop.png, doi-mobile.png]
-tools: [HTML, SASS, JavaScript, Github, Parcel]
-github: https://github.com/MLousdal/Dice-Rolling-Game
-live: https://dice-rolling-game.vercel.app/
+tools: [Vue, SASS, Figma, Open-props]
+github: https://github.com/MLousdal/Vue-Dice-Game
+live: https://vue-dice-game.vercel.app/
 ---
 
 ### Beskrivelse
 
-Dice on ice er et mini-projekt der blev udviklet som del af Hacktoberfest 2021. Udfordringen fra <a class="external-link" target="_blank" rel="noopener" href="https://github.com/thinkswell/javascript-mini-projects/">javascript-mini-projects</a> lød at løse opgaven uden at anvende et javascript framework.
+Dice on ice er et digitalt terningespil lavet i Vue, hvor 2+ spillere kæmper om at være den første til at nå 50 point.
 
 #### Reglerne
 
